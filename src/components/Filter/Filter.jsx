@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 import { Component } from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 
@@ -30,3 +32,8 @@ export class Filter extends Component {
     );
   }
 }
+
+Filter.propTypes = {
+  handleFilter: PropTypes.func.isRequired,
+  handleContacts: PropTypes.func.isRequired,
+};

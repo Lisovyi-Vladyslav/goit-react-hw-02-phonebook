@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 import { Component } from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 
@@ -51,3 +53,7 @@ export class ContactForm extends Component {
     );
   }
 }
+
+ContactForm.propTypes = {
+   onSubmit: PropTypes.func,
+};

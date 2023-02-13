@@ -1,13 +1,12 @@
+import PropTypes from "prop-types";
+
 import { Component } from 'react';
 import React from 'react';
 
  
 export class ContactList extends Component {
-  
-    render() {
-     
+    render() {   
         const { contacts, handleDelete } = this.props;
-// console.log(this.props.handleDelete)
     return (
       <>
          <ul>
@@ -25,3 +24,12 @@ export class ContactList extends Component {
     );
   }
 }
+
+ContactList.propTypes = {
+  handleDelete: PropTypes.func.isRequired,
+  contacts: PropTypes.arrayOf(PropTypes.exact({
+     number: PropTypes.string.isRequired,
+   name: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+  })),
+};

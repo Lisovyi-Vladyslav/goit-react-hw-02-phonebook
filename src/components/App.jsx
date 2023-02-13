@@ -35,7 +35,6 @@ handleDelete = idx => {
 
 handleFilter = (value) => {
   this.setState({ filter: value },);
-  
    };
    
 handleContacts = () => {
