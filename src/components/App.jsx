@@ -1,5 +1,4 @@
 import { Component } from 'react';
-import ReactDOM from "react-dom";
 import { ContactForm } from "components/ContactForm/ContactForm";
 import { Filter } from "components/Filter/Filter";
 import { ContactList } from "components/ContactList/ContactList";
@@ -49,7 +48,6 @@ handleContacts = () => {
 	};
 
   render() {
-    const { contacts, filter } = this.state
     
     return (
       <>
