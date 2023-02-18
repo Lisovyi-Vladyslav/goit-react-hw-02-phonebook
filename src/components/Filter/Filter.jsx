@@ -14,7 +14,7 @@ export const Filter = (props) => {
   let filter = watch('filter');
 
   useEffect(() => {
-    console.log('я працюю')
+
     props.handleFilter(filter);
     props.handleContacts()
   // eslint-disable-next-line react-hooks/exhaustive-deps
